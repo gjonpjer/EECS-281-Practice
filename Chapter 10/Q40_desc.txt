@@ -1,0 +1,7 @@
+You are given an array of points where points[i] = [x_i, y_i] represents a point on the Cartesian plane, as well as an integer
+𝑘. Implement a function that returns the 𝑘 closest points to the origin (0, 0). Note that the distance between any two points (𝑥1,𝑦1)and (𝑥2,𝑦2) on a Cartesian plane is equal to √(𝑥2 −𝑥1)^2 + (𝑦2 −𝑦1)^2. You may return the solution in any order, and the points in the
+solution are guaranteed to be unique. For example, given [[101, 183],[-203,280],[281,-370]] and 𝑘 = 2, you would return
+[[101,183],[-203,280]] (in any order), since these are the two points that are closest to the origin.
+std::vector<std::vector<int32_t>> k_closest_to_origin(
+const std::vector<std::vector<int32_t>>& points, int32_t k);
+Your solution should run in worst-case Θ(𝑛log(𝑘)) time and Θ(𝑘) auxiliary space, where 𝑛 is the number of points in the input vector.
